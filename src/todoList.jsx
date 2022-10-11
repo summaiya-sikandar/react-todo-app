@@ -33,7 +33,7 @@ function TodoList() {
   }
   function markAsEditing(id){
     const updatedTodos =  todos.map(todo => {
-      if (todo. id === id) {
+      if (todo.id === id) {
         todo.isEditing= true;
       }
       return todo;
@@ -42,7 +42,7 @@ function TodoList() {
   }
   function cancelEdit(event,id){
     const updatedTodos =  todos.map(todo => {
-      if (todo. id === id) {
+      if (todo.id === id) {
         todo.isEditing= false;
       }
       return todo;
@@ -51,7 +51,7 @@ function TodoList() {
   }
   function updateTodo(event ,id){
     const updatedTodos =  todos.map(todo => {
-      if (todo. id === id) {
+      if (todo.id === id) {
         if (event.target.value.trim().length === 0) {
           todo.isEditing= false
           return todo;
